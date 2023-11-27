@@ -44,6 +44,15 @@
   color: hsl(0deg 0% 15%);
 }
 
+.site-container {
+  max-width: 1210px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
 .button {
   outline: none;
   display: inline-flex;

@@ -1,0 +1,90 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.wrapper {
+margin: 0 auto;
+max-width: 1200px;
+background-color: #fefff2;
+}
+
+
+.conteiner {
+  margin: 0 auto;
+  max-width: 600px;
+  /* background-color: #b2d0f7; */
+}
+
+.conteiner__box {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.test__papka {
+  margin-bottom: inherit;
+  position: relative; 
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+
+  /* Ждет клик по кнопке чтоб раскрыться до 100vh*/
+  height: 32vh;
+  
+  background-image: url('./about-background-smoll.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  transition: height 5s ease-in-out, background-image 5s ease-in-out;
+}
+
+/*этот класс нудо удалить при клике на кнопку*/
+.test__papka--grad {
+  background: linear-gradient(180deg, #272727 0%, rgba(39, 39, 39, 0.00) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* */
+}
+
+.test__papka h2 {
+ padding-top: 10px;
+ text-align: center;
+ margin-bottom: 65px;
+}
+
+
+.test__txt {
+  display: none;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+ .test__show {
+  display: block;
+
+ }
+ 
+/* ====== кнопка ============= */
+
+button {
+
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+
+}
+
+.test__btn-more {
+    display: none;
+    position: absolute;
+    bottom: -30px;
+    /* left: 43vw; */
+    left: calc(50% - 25px); /* Центрирование кнопки */
+}

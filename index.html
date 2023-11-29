@@ -16,97 +16,148 @@
   <script src="./js/index.js" type="module"></script>
 </head>
 
-<body class="site-body site-page__site-body">
+<body class="site-body my-scrollable-element site-page__site-body" data-scroll-lock-scrollable>
   <h1 class="site-title">....</h1>
   <header class="site-header">
-    <div class="site-container">
-      <!-- First job / Denis Mikhaylenko  -->
-      <div class="site-header__wrapper">
-        <div class="site-header__content">
-          <a class="logo site-header__logo" href="#">
-            <img class="logo__item" src="./images/icon-header-logo.svg" width="100" height="35"
-              alt="Логотип сайта Сити Про">
-          </a>
-
-          <div class="navigation-wrapper site-header__navigation-wrapper">
-            <nav class="menu site-header__menu">
-              <ul class="menu__list">
-                <li>
-                  <a class="menu__link" href="about">
-                    О&nbsp;нас
-                  </a>
-                </li>
-                <li>
-                  <a class="menu__link" href="services">
-                    Виды&nbsp;услуг
-                  </a>
-                </li>
-                <li>
-                  <a class="menu__link" href="portfolio">
-                    Портфолио
-                  </a>
-                </li>
-                <li>
-                  <a class="menu__link" href="request">
-                    Оставьте&nbsp;заявку
-                  </a>
-                </li>
-                <li>
-                  <a class="menu__link" href="contacts">
-                    Контакты
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <ul class="social site-header__social">
-              <li class="social__item">
-                <a class="social__link" href="#no-scrolling" target="_blank" aria-label="социальная сеть">
-                  <svg class="social__link-icon" width="50" height="50" aria-hidden="true">
-                    <use xlink:href="images/sprite.svg#icon-social-vkontakte" />
-                  </svg>
+    <div class="site-container site-header__site-container">
+      <div class="site-header__content">
+        <a class="logo site-header__logo" href="#">
+          <img class="logo__item" src="./images/logo-city.svg" width="100" height="35" alt="Логотип сайта Сити Про">
+        </a>
+        <div class="navigation-wrapper site-header__navigation-wrapper">
+          <nav class="menu site-header__menu">
+            <ul class="menu__list">
+              <li>
+                <a class="menu__link" href="about">
+                  О&nbsp;нас
                 </a>
               </li>
-              <li class="social__item">
-                <a class="social__link" href="#no-scrolling" target="_blank" aria-label="социальная сеть">
-                  <svg class="social__link-icon" width="50" height="50" aria-hidden="true">
-                    <use xlink:href="images/sprite.svg#icon-social-telegram" />
-                  </svg>
+              <li>
+                <a class="menu__link" href="services">
+                  Виды&nbsp;услуг
                 </a>
               </li>
-              <li class="social__item">
-                <a class="social__link" href="#no-scrolling" target="_blank" aria-label="социальная сеть">
-                  <svg class="social__link-icon" width="50" height="50" aria-hidden="true">
-                    <use xlink:href="images/sprite.svg#icon-social-whatsapp" />
-                  </svg>
+              <li>
+                <a class="menu__link" href="portfolio">
+                  Портфолио
                 </a>
               </li>
-              <li class="social__item">
-                <a class="social__link" href="#no-scrolling" target="_blank" aria-label="социальная сеть">
-                  <svg class="social__link-icon" width="50" height="50" aria-hidden="true">
-                    <use xlink:href="images/sprite.svg#icon-social-viber" />
-                  </svg>
+              <li>
+                <a class="menu__link" href="request">
+                  Оставьте&nbsp;заявку
+                </a>
+              </li>
+              <li>
+                <a class="menu__link" href="contacts">
+                  Контакты
                 </a>
               </li>
             </ul>
-          </div>
-
-          <a class="whatsapp-link site-header__whatsapp-link" href="tel:79000000000">
-            <svg class="whatsapp-link__icon" width="30" height="30" aria-hidden="true">
-              <use xlink:href="images/sprite.svg#icon-phone" />
-            </svg>
-            +7&nbsp;900&nbsp;000&nbsp;00&nbsp;00
-          </a>
-          <button class="hamburger hamburger_collapse" type="button" aria-label="Кнопка вызова навигационного меню">
-            <span class="hamburger__icon"></span>
-          </button>
+          </nav>
+          <ul class="social site-header__social">
+            <li class="social__item">
+              <a class="social__link" href="#no-scrolling" target="_blank" aria-label="социальная сеть">
+                <svg class="social__link-icon" width="50" height="50" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-social-vkontakte" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#no-scrolling" target="_blank" aria-label="социальная сеть">
+                <svg class="social__link-icon" width="50" height="50" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-social-telegram" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#no-scrolling" target="_blank" aria-label="социальная сеть">
+                <svg class="social__link-icon" width="50" height="50" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-social-whatsapp" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#no-scrolling" target="_blank" aria-label="социальная сеть">
+                <svg class="social__link-icon" width="50" height="50" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-social-viber" />
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
+        <a class="whatsapp-link site-header__whatsapp-link" href="tel:79000000000">
+          <svg class="whatsapp-link__icon" width="30" height="30" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-phone" />
+          </svg>
+          +7&nbsp;900&nbsp;000&nbsp;00&nbsp;00
+        </a>
+        <button class="hamburger site-header__hamburger" type="button"
+          aria-label="Кнопка раскрытии навигационного меню">
+          <span class="hamburger__span"></span>
+          <span class="hamburger__span"></span>
+          <span class="hamburger__span"></span>
+        </button>
       </div>
     </div>
   </header>
   <main class="site-main">
-    <section class="hero-section">
-      <div class="site-container">
-
+    <section class="hero-section site-main__hero-section">
+      <div class="site-container hero-section__site-container">
+        <div class="hero-section__content">
+          <h2 class="hero-section__title">Реставрация лакокрасочного покрытия</h2>
+          <button class="button button_type_get" type="button">Получить консультацию</button>
+          <div class="swiper-paginations">
+            <div class="swiper-pagination hero-section__swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper hero-section__swiper">
+        <ul class="swiper-wrapper hero-section__swiper-wrapper">
+          <li class="swiper-slide">
+            <picture class="hero-section__picture">
+              <!-- <source
+                srcset="./images/hero-swiper-pic-first1210@1x.avif, ./images/hero-swiper-pic-first1210@2x.avif 2x, ./images/hero-swiper-pic-first1210@3x.avif 3x"
+                media="(max-width: 1210px)" type="image/avif">
+              <source
+                srcset="./images/hero-swiper-pic-first1210@1x.webp, ./images/hero-swiper-pic-first1210@2x.webp 2x, ./images/hero-swiper-pic-first1210@3x.webp 3x"
+                media="(max-width: 1210px)" type="image/webp">
+              <source
+                srcset="./images/hero-swiper-pic-first1210@1.jpg, ./images/hero-swiper-pic-first1210@2x.jpg 2x, ./images/hero-swiper-pic-first1210@3x.jpg 3x"
+                media="(max-width: 1210px)">
+              <source
+                srcset="./images/hero-swiper-pic-first@1x.avif, ./images/hero-swiper-pic-first@2x.avif 2x, ./images/hero-swiper-pic-first@3x.avif 3x"
+                type="image/avif">
+              <source
+                srcset="./images/hero-swiper-pic-first@1x.webp, ./images/hero-swiper-pic-first@2x.webp 2x, ./images/hero-swiper-pic-first@3x.webp 3x"
+                type="image/webp"> -->
+              <img class="hero-section__image" src="./images/hero-swiper-pic-first@1x.png"
+                srcset="./images/hero-swiper-pic-first@2x.png 2x, ./images/hero-swiper-pic-first@3x.png 3x" width="1920"
+                height="750" decoding="async" loading="lazy" aria-hidden="true" alt="">
+            </picture>
+          </li>
+          <li class="swiper-slide">
+            <picture class="hero-section__picture">
+              <!-- <source
+                srcset="./images/hero-swiper-pic-first1210@1x.avif, ./images/hero-swiper-pic-first1210@2x.avif 2x, ./images/hero-swiper-pic-first1210@3x.avif 3x"
+                media="(max-width: 1210px)" type="image/avif">
+              <source
+                srcset="./images/hero-swiper-pic-first1210@1x.webp, ./images/hero-swiper-pic-first1210@2x.webp 2x, ./images/hero-swiper-pic-first1210@3x.webp 3x"
+                media="(max-width: 1210px)" type="image/webp">
+              <source
+                srcset="./images/hero-swiper-pic-first1210@1.jpg, ./images/hero-swiper-pic-first1210@2x.jpg 2x, ./images/hero-swiper-pic-first1210@3x.jpg 3x"
+                media="(max-width: 1210px)">
+              <source
+                srcset="./images/hero-swiper-pic-first@1x.avif, ./images/hero-swiper-pic-first@2x.avif 2x, ./images/hero-swiper-pic-first@3x.avif 3x"
+                type="image/avif">
+              <source
+                srcset="./images/hero-swiper-pic-first@1x.webp, ./images/hero-swiper-pic-first@2x.webp 2x, ./images/hero-swiper-pic-first@3x.webp 3x"
+                type="image/webp"> -->
+              <img class="hero-section__image" src="./images/hero-swiper-pic-first@1x.png"
+                srcset="./images/hero-swiper-pic-first@2x.png 2x, ./images/hero-swiper-pic-first@3x.png 3x" width="1920"
+                height="750" decoding="async" loading="lazy" aria-hidden="true" alt="">
+            </picture>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="about-section">

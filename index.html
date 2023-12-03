@@ -1,71 +1,127 @@
 <!DOCTYPE html>
 <html class="site-page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Сити Про</title>
-    <link href="./fonts/gilroy-semibold.woff2" rel="preload" as="font" crossorigin>
-    <link href="./fonts/gilroy-bold.woff2" rel="preload" as="font" crossorigin>
-    <link href="./css/libs/swiper.min.css" rel="stylesheet">
-    <link href="./css/index.css" rel="stylesheet">
-    <link href="./images/favicon.png" rel="icon" sizes="16x16" type="image/png">
-    <script src="./js/libs/scroll-lock.min.js" defer></script>
-    <script src="./js/libs/swiper.min.js" defer></script>
-    <script src="./js/libs/a11y-dialog.min.js" defer></script>
-    <script src="./js/index.js" type="module"></script>
-  </head>
-  <body class="site-body site-page__site-body">
-    <header class="site-header">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Сити Про</title>
+  <link href="./fonts/gilroy-semibold.woff2" rel="preload" as="font" crossorigin>
+  <link href="./fonts/gilroy-bold.woff2" rel="preload" as="font" crossorigin>
+  <link href="./css/libs/swiper.min.css" rel="stylesheet">
+  <link href="./css/index.css" rel="stylesheet">
+
+  <link href="./css/about.css" rel="stylesheet"> <!-- abut -->
+
+  <link href="./images/favicon.png" rel="icon" sizes="16x16" type="image/png">
+  <script src="./js/libs/scroll-lock.min.js" defer></script>
+  <script src="./js/libs/swiper.min.js" defer></script>
+  <script src="./js/libs/a11y-dialog.min.js" defer></script>
+  <script src="./js/index.js" type="module"></script>
+
+  <script src="./js/about.js" defer></script>
+</head>
+
+<body class="site-body site-page__site-body">
+  <header class="site-header">
+    <div class="site-container">
+
+    </div>
+  </header>
+  <main class="site-main">
+    <section class="hero-section">
       <div class="site-container">
 
       </div>
-    </header>
-    <main class="site-main">
-      <section class="hero-section">
-        <div class="site-container">
+    </section>
 
-        </div>
-      </section>
-      <section class="about-section">
-        <div class="site-container">
+    <section class="about-section">
+      <div class="site-container ">
+        <div class="about-section__wrapper" id="bg-image">
+          <h2 class="about-section__title">о&nbsp;нас</h2>
 
-        </div>
-      </section>
-      <section class="advantages-section">
-        <div class="site-container">
+          <div class="about-section__content">
+            <div class="about-section__descr">
+              <h3 class="about-section__subtitle">Сплочённость команды профессионалов позволила расправить крылья</h3>
+              <div class="about-section__gradient" id="gradient">
+                <p class="about-section__txt about-section__show">
+                  Противоположная точка зрения подразумевает, что интерактивные прототипы,
+                  инициированные исключительно синтетически, превращены в&nbsp;посмешище, хотя само&nbsp;их
+                  существование
+                  приносит несомненную пользу обществу.
+                </p>
+                <p class="about-section__txt ">
+                  В&nbsp;частности, перспективное планирование предопределяет высокую востребованность инновационных
+                  методов управления процессами.
+                </p>
+                <p class="about-section__txt ">
+                  А&nbsp;ещё ключевые особенности структуры проекта представляют собой не&nbsp;что иное, как
+                  квинтэссенцию
+                  победы маркетинга над разумом и&nbsp;должны быть подвергнуты целой серии независимых исследований.
+                </p>
 
-        </div>
-      </section>
-      <section class="services-section">
-        <div class="site-container">
+                <!-- кнопка внизу: видна только на 321рх-->
+                <button class="about-section__btn-more" id="btn-more">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                    <circle cx="30" cy="30" r="27" fill="#FFF" />
+                    <circle cx="30" cy="30" r="27" fill="#FFF" />
+                    <circle cx="30" cy="30" r="27" fill="#E8E8E8" stroke="white" stroke-width="6" />
+                    <path d="M23 28L30 35L37 28" stroke="white" stroke-width="4" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </button>
 
-        </div>
-      </section>
-      <section class="trust-section">
-        <div class="site-container">
+              </div>
+            </div>
 
-        </div>
-      </section>
-      <section class="portfolio-section">
-        <div class="site-container">
+            <div class="about-section__img">
+              <picture>
+                <source srcset="./images/about-img-280x190.png" media="(max-width: 320px)">
+                <img src="./images/about-img-500x350.png" width="500" height="350" loading="lazy" alt="Маляры">
+              </picture>
+            </div>
 
+          </div>
         </div>
-      </section>
-      <section class="request-section">
-        <div class="site-container">
+      </div>
+    </section>
 
-        </div>
-      </section>
-      <section class="contacts-section">
-        <div class="site-container">
 
-        </div>
-      </section>
-    </main>
-    <footer class="site-footer">
+    <section class="advantages-section">
       <div class="site-container">
 
       </div>
-    </footer>
-  </body>
+    </section>
+    <section class="services-section">
+      <div class="site-container">
+
+      </div>
+    </section>
+    <section class="trust-section">
+      <div class="site-container">
+
+      </div>
+    </section>
+    <section class="portfolio-section">
+      <div class="site-container">
+
+      </div>
+    </section>
+    <section class="request-section">
+      <div class="site-container">
+
+      </div>
+    </section>
+    <section class="contacts-section">
+      <div class="site-container">
+
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="site-container">
+
+    </div>
+  </footer>
+</body>
+
 </html>

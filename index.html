@@ -13,13 +13,90 @@
   <script src="./js/libs/scroll-lock.min.js" defer></script>
   <script src="./js/libs/swiper.min.js" defer></script>
   <script src="./js/libs/a11y-dialog.min.js" defer></script>
-  <script src="./js/index.js"></script>
+  <script src="./js/index.js" defer></script>
 </head>
 
 <body class="site-body site-page__site-body">
   <header class="site-header">
-    <div class="site-container">
-
+    <div class="site-container site-header__site-container">
+      <div class="site-header__content">
+        <a class="logo site-header__logo" href="#">
+          <img class="logo__item" src="./images/logo-city.svg" width="100" height="35" alt="Логотип сайта Сити Про">
+        </a>
+        <div class="navigation-wrapper site-header__navigation-wrapper">
+          <nav class="menu site-header__menu">
+            <ul class="menu__list">
+              <li>
+                <a class="menu__link" href="about">
+                  О&nbsp;нас
+                </a>
+              </li>
+              <li>
+                <a class="menu__link" href="services">
+                  Виды&nbsp;услуг
+                </a>
+              </li>
+              <li>
+                <a class="menu__link" href="portfolio">
+                  Портфолио
+                </a>
+              </li>
+              <li>
+                <a class="menu__link" href="request">
+                  Оставьте&nbsp;заявку
+                </a>
+              </li>
+              <li>
+                <a class="menu__link" href="contacts">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="social site-header__social">
+            <li class="social__item">
+              <a class="social__link" href="#no-scrolling" target="_blank" aria-label="социальная сеть">
+                <svg class="social__link-icon" width="50" height="50" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-vkontakte" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#no-scrolling" target="_blank" aria-label="социальная сеть">
+                <svg class="social__link-icon" width="50" height="50" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-telegram" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#no-scrolling" target="_blank" aria-label="социальная сеть">
+                <svg class="social__link-icon" width="50" height="50" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-whatsapp" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#no-scrolling" target="_blank" aria-label="социальная сеть">
+                <svg class="social__link-icon" width="50" height="50" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-viber" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a class="whatsapp-link site-header__whatsapp-link" href="tel:79000000000">
+          <svg class="whatsapp-link__icon" width="30" height="30" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-phone" />
+          </svg>
+          +7&nbsp;900&nbsp;000&nbsp;00&nbsp;00
+        </a>
+        <button class="hamburger site-header__hamburger" type="button"
+          aria-label="Кнопка раскрытии навигационного меню">
+          <span class="hamburger__span"></span>
+          <span class="hamburger__span"></span>
+          <span class="hamburger__span"></span>
+        </button>
+      </div>
     </div>
   </header>
   <main class="site-main">

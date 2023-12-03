@@ -8,21 +8,100 @@
   <link href="./fonts/gilroy-semibold.woff2" rel="preload" as="font" crossorigin>
   <link href="./fonts/gilroy-bold.woff2" rel="preload" as="font" crossorigin>
   <link href="./css/libs/swiper.min.css" rel="stylesheet">
+
+  <link href="./css/libs/swiper-bundle.min.css" rel="stylesheet"><!-- добавлено  -->
+
   <link href="./css/index.css" rel="stylesheet">
   <link href="./css/servic.css" rel="stylesheet">
   <link href="./images/favicon.png" rel="icon" sizes="16x16" type="image/png">
   <script src="./js/libs/scroll-lock.min.js" defer></script>
   <script src="./js/libs/swiper.min.js" defer></script>
+
+  <script src="./js/libs/swiper-bundle.min.js" defer></script><!-- добавлено  -->
+
   <script src="./js/libs/a11y-dialog.min.js" defer></script>
   <script src="./js/index.js" type="module"></script>
+
+  <script src="./js/servic-swiper.js" defer></script><!-- добавлено  -->
 </head>
 
 <body class="site-body site-page__site-body">
 
-  <section class="services-section  services-section__folder">
-    <div class="site-container">
-      <h1>test</h1>
+  <section class="services-section ">
+
+    <div class="services-section__folder">
+      <div class="site-container">
+        <h2 class="services-section__title">виды услуг</h2>
+
+        <div class="swiper">
+
+          <div class="swiper-wrapper ">
+
+            <div class="swiper-slide services-section__cards">
+
+              <div class="services-section__card ">
+                <img src="./images/servic-card-1.png" alt="">
+
+                <div class="services-section__info">
+                  <img src="./images/icon-fan.svg" alt="">
+                  <div class="services-section__active">
+                    <h3>Реставрация лакокрасочного покрытия</h3>
+                    <img src="./images/icon-down-arrow.svg" alt="">
+                    <img src="./images/icon-up-arrow-min.svg" alt="">
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="services-section__card ">
+                <img src="./images/servic-card-2.png" alt="">
+
+                <div class="services-section__info">
+                  <img src="./images/icon-brush.svg" alt="">
+                  <div class="services-section__active">
+                    <h3>Реставрация лакокрасочного покрытия</h3>
+                    <img src="./images/icon-down-arrow.svg" alt="">
+                    <img src="./images/icon-up-arrow-min.svg" alt="">
+                  </div>
+                </div>
+
+              </div>
+              <div class="services-section__card ">
+                <img src="./images/servic-card-3.png" alt="">
+
+                <div class="services-section__info">
+                  <img src="./images/icon-building.svg" alt="">
+                  <div class="services-section__active">
+                    <h3>Реставрация лакокрасочного покрытия</h3>
+                    <img src="./images/icon-down-arrow.svg" alt="">
+                    <img src="./images/icon-up-arrow-min.svg" alt="">
+                  </div>
+                </div>
+
+              </div>
+              <div class="services-section__card ">
+                <img src="./images/servic-card-4.png" alt="">
+
+                <div class="services-section__info">
+                  <img src="./images/icon-gate.svg" alt="">
+                  <div class="services-section__active">
+                    <h3>Реставрация лакокрасочного покрытия</h3>
+                    <img src="./images/icon-down-arrow.svg" alt="">
+                    <img src="./images/icon-up-arrow-min.svg" alt="">
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
     </div>
+
   </section>
 
 </body>

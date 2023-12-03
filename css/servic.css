@@ -1,7 +1,66 @@
+
+.services-section__folder {
+   /*width: 100vw;*/ /*дает скролл!*/
+  /* height: 100vh; */ /*дает скролл!*/
+
+  background-repeat: no-repeat;
+  background-image: url(../images/servic-folder-1920.svg);
+  background-size: cover;
+  background-position: top center;
+
+  outline: 1px solid red;
+}
+
+
 .site-container {
   outline: 1px solid green;
 }
 
-.services-section__folder{
-  background-image: url('../images/servic-folder-1920.svg');
+.services-section__title {
+  text-transform: uppercase;
 }
+
+/* фоновые картинки */
+
+.services-section__cards {
+  display:flex ;
+  flex-direction: row;
+}
+
+.services-section__card {
+
+  position: relative;
+  display: inline-block;
+  width: 270px;
+  height: 500px;
+
+  border-radius: 20px;
+
+  background: #73A56C;
+
+}
+
+
+.services-section__card::before{
+  content: '';
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  /* background: linear-gradient(180deg, rgba(0, 102, 255, 0.00) 31%, #000 100%); */
+  background: linear-gradient(180deg,rgba(0, 102, 255, 0.00) 21%, rgba(-6, 123, 290, 0.3) 47%, #000 97%);
+}
+
+.services-section__info {
+position: absolute;
+bottom: 50px;
+left: calc(50% - 50px);
+}
+
+
+
+
+
+/* =================== */

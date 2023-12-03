@@ -1,0 +1,7 @@
+.site-container {
+  outline: 1px solid green;
+}
+
+.services-section__folder{
+  background-image: url('../images/servic-folder-1920.svg');
+}

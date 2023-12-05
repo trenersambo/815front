@@ -9,7 +9,7 @@
   <link href="./fonts/gilroy-bold.woff2" rel="preload" as="font" crossorigin>
   <link href="./css/libs/swiper.min.css" rel="stylesheet">
 
-  <link href="./css/libs/swiper-bundle.min.css" rel="stylesheet"><!-- добавлено  -->
+  <!--   <link href="./css/libs/swiper-bundle.min.css" rel="stylesheet">добавлено  -->
 
   <link href="./css/index.css" rel="stylesheet">
   <link href="./css/servic.css" rel="stylesheet">
@@ -17,12 +17,12 @@
   <script src="./js/libs/scroll-lock.min.js" defer></script>
   <script src="./js/libs/swiper.min.js" defer></script>
 
-  <script src="./js/libs/swiper-bundle.min.js" defer></script><!-- добавлено  -->
+  <!--   <script src="./js/libs/swiper-bundle.min.js" defer></script>  -->
 
   <script src="./js/libs/a11y-dialog.min.js" defer></script>
   <script src="./js/index.js" type="module"></script>
 
-  <script src="./js/servic-swiper.js" defer></script><!-- добавлено  -->
+  <!--  <script src="./js/servic-swiper.js" defer></script>  -->
 </head>
 
 <body class="site-body site-page__site-body">
@@ -38,61 +38,123 @@
           <div class="swiper-wrapper ">
 
             <div class="swiper-slide services-section__cards">
+              <div class=" box services-section__card ">
+                <img src="./images/icon-fan.svg" class="services-section__icon" role="presentation" alt="" />
 
-              <div class="services-section__card ">
-                <img src="./images/servic-card-1.png" alt="">
-
+                <!-- инфоблок 1 -->
                 <div class="services-section__info">
-                  <img src="./images/icon-fan.svg" alt="">
-                  <div class="services-section__active">
-                    <h3>Реставрация лакокрасочного покрытия</h3>
-                    <img src="./images/icon-down-arrow.svg" alt="">
-                    <img src="./images/icon-up-arrow-min.svg" alt="">
-                  </div>
+                  <p class="services-section__txt">Реставрация лакокрасочного покрытия</p>
+                  <p class="services-section__cons">Получить консультацию</p>
+                  <img src="./images/icon-down-arrow.svg" class="services-section__arrow" />
                 </div>
 
+                <!-- картинка -->
+                <img class="box__image services-section__image" src="./images/servic-card-1.png" width="270"
+                  height="500" role="presentation" alt="">
+
+                <!-- svg-градиент (как решение задачи с градиентом: linearGradient) -->
+                <svg class="box__svg services-section__svg" xmlns="http://www.w3.org/2000/svg" width="270"
+                  role="presentation" height="500" fill="none">
+                  <rect width="270" height="500" fill="url(#a)" rx="20" />
+                  <defs>
+                    <linearGradient id="a" x1="135" x2="135" y1="155" y2="500" gradientUnits="userSpaceOnUse">
+                      <stop class="box__svg-stop services-section__svg-stop" stop-color="#06F" stop-opacity="0" />
+                      <stop offset="1" />
+                    </linearGradient>
+                  </defs>
+                </svg>
 
               </div>
-              <div class="services-section__card ">
-                <img src="./images/servic-card-2.png" alt="">
+            </div>
 
+            <div class="swiper-slide services-section__cards">
+              <div class=" box services-section__card ">
+                <img src="./images/icon-brush.svg" class="services-section__icon" role="presentation" alt="" />
+                <!-- инфоблок 2 -->
                 <div class="services-section__info">
-                  <img src="./images/icon-brush.svg" alt="">
-                  <div class="services-section__active">
-                    <h3>Реставрация лакокрасочного покрытия</h3>
-                    <img src="./images/icon-down-arrow.svg" alt="">
-                    <img src="./images/icon-up-arrow-min.svg" alt="">
-                  </div>
+
+                  <p class="services-section__txt">Профессиональная окраска на объекте</p>
+                  <p class="services-section__cons">Получить консультацию</p>
+                  <img src="./images/icon-down-arrow.svg" class="services-section__arrow" />
                 </div>
 
-              </div>
-              <div class="services-section__card ">
-                <img src="./images/servic-card-3.png" alt="">
+                <!-- картинка -->
+                <img class="box__image services-section__image" src="./images/servic-card-2.png" width="270"
+                  height="500" role="presentation" alt="">
 
+                <!-- svg-градиент (как решение задачи с градиентом: linearGradient) -->
+                <svg class="box__svg services-section__svg" xmlns="http://www.w3.org/2000/svg" width="270"
+                  role="presentation" height="500" fill="none">
+                  <rect width="270" height="500" fill="url(#a)" rx="20" />
+                  <defs>
+                    <linearGradient id="a" x1="135" x2="135" y1="155" y2="500" gradientUnits="userSpaceOnUse">
+                      <stop class="box__svg-stop services-section__svg-stop" stop-color="#06F" stop-opacity="0" />
+                      <stop offset="1" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+              </div>
+            </div>
+
+            <div class="swiper-slide services-section__cards">
+              <div class=" box services-section__card ">
+                <img src="./images/icon-building.svg" class="services-section__icon" role="presentation" alt="" />
+                <!-- инфоблок 3 -->
                 <div class="services-section__info">
-                  <img src="./images/icon-building.svg" alt="">
-                  <div class="services-section__active">
-                    <h3>Реставрация лакокрасочного покрытия</h3>
-                    <img src="./images/icon-down-arrow.svg" alt="">
-                    <img src="./images/icon-up-arrow-min.svg" alt="">
-                  </div>
+
+                  <p class="services-section__txt">Профессиональная окраска экстерьера</p>
+                  <p class="services-section__cons">Получить консультацию</p>
+                  <img src="./images/icon-down-arrow.svg" class="services-section__arrow" />
                 </div>
 
-              </div>
-              <div class="services-section__card ">
-                <img src="./images/servic-card-4.png" alt="">
+                <!-- картинка -->
+                <img class="box__image services-section__image" src="./images/servic-card-3.png" width="270"
+                  height="500" role="presentation" alt="">
 
+                <!-- svg-градиент (как решение задачи с градиентом: linearGradient) -->
+                <svg class="box__svg services-section__svg" xmlns="http://www.w3.org/2000/svg" width="270"
+                  role="presentation" height="500" fill="none">
+                  <rect width="270" height="500" fill="url(#a)" rx="20" />
+                  <defs>
+                    <linearGradient id="a" x1="135" x2="135" y1="155" y2="500" gradientUnits="userSpaceOnUse">
+                      <stop class="box__svg-stop services-section__svg-stop" stop-color="#06F" stop-opacity="0" />
+                      <stop offset="1" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+              </div>
+            </div>
+
+            <div class="swiper-slide services-section__cards">
+              <div class=" box services-section__card ">
+                <img src="./images/icon-gate.svg" class="services-section__icon" role="presentation" alt="" />
+                <!-- инфоблок 4 -->
                 <div class="services-section__info">
-                  <img src="./images/icon-gate.svg" alt="">
-                  <div class="services-section__active">
-                    <h3>Реставрация лакокрасочного покрытия</h3>
-                    <img src="./images/icon-down-arrow.svg" alt="">
-                    <img src="./images/icon-up-arrow-min.svg" alt="">
-                  </div>
+
+                  <p class="services-section__txt">Профессиональная окраска ограждений и витражей</p>
+                  <p class="services-section__cons">Получить консультацию</p>
+                  <img src="./images/icon-down-arrow.svg" class="services-section__arrow" />
                 </div>
 
-              </div>
+                <!-- картинка -->
+                <img class="box__image services-section__image" src="./images/servic-card-4.png" width="270"
+                  height="500" role="presentation" alt="">
 
+                <!-- svg-градиент (как решение задачи с градиентом: linearGradient) -->
+                <svg class="box__svg services-section__svg" xmlns="http://www.w3.org/2000/svg" width="270"
+                  role="presentation" height="500" fill="none">
+                  <rect width="270" height="500" fill="url(#a)" rx="20" />
+                  <defs>
+                    <linearGradient id="a" x1="135" x2="135" y1="155" y2="500" gradientUnits="userSpaceOnUse">
+                      <stop class="box__svg-stop services-section__svg-stop" stop-color="#06F" stop-opacity="0" />
+                      <stop offset="1" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+              </div>
             </div>
 
           </div>
